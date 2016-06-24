@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var messageLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+   
+    @IBAction func showName(sender: AnyObject) {
+            messageLabel.text = "José"
+    }
+    @IBAction func showLastname(sender: AnyObject) {
+            messageLabel.text = "Velásquez"
+    }
+    @IBAction func showCity(sender: AnyObject) {
+            messageLabel.text = "Medellín"
+    }
+    @IBAction func showCountry(sender: AnyObject) {
+            messageLabel.text = "Colombia"
+    }
+    
 }
-
